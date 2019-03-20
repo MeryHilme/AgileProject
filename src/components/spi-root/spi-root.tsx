@@ -22,6 +22,7 @@ export class SpiRoot {
               <stencil-route url="/ue/:codeFormation" component="spi-ue" exact={true} />
               <stencil-route url="/createe" component="spi-createe" exact={true} />
               <stencil-route url="/ajout" component="form-add" exact={true} />
+              <stencil-route url="/ListQ" component="spi-qualificatif" exact={true} />
               
             </stencil-route-switch>
           </stencil-router>

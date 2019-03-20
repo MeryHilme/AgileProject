@@ -1,16 +1,9 @@
-@import "../../../node_modules/bulma/sass/grid/columns.sass";
+ @import"../../../node_modules/bulma/sass/grid/columns.sass";
+@import"../../../node_modules/bulma/sass/elements/form.sass";
 
 
 
-.divregroupee{
-    margin: 0 auto;
-}	
 
-.button{
-    color: rgb(111,143,189);
-    background-color: rgb(111,143,189);
-}
-//https://wallup.net/wp-content/uploads/2017/11/17/364231-books-macro-blurred-spiral-notebooks-748x468.jpg
 body{
     background-image:url('https://images.pexels.com/photos/1558690/pexels-photo-1558690.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940');
     background-attachment: fixed;
@@ -19,3 +12,15 @@ body{
     background-size: cover;
     height: 120vh;
   }
+
+.column {
+  background-color: inherit;}
+
+#box{
+    background-color: rgba(0,0,0,0.2);
+  }
+  #label{
+    color: azure
+  }
+  #button{
+background-color: darkturquoise;}

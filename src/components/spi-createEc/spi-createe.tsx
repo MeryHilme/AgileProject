@@ -70,7 +70,7 @@ export class SpiCreatee {
       },
       body: JSON.stringify(payload)
     }).then(() => { alert("L'élément constitutif a été bien créer!");
-    location.href = '/list'; }
+    location.href = '/ue/'+this.formation.codeFormation; }
 ).catch((error) => {
    alert('ERREUR, Réessayer plutard!');
    console.error(error);
@@ -116,10 +116,10 @@ export class SpiCreatee {
 
             <div class="columns">
               <div class="column is-6 is-offset-3">
-                <div class="box">
+                <div class="box" id="box">
                   <form>
                     <div class="field">
-                      <label class="label">Code d'élément constitutif  </label>
+                      <label class="label" id="label">Code d'élément constitutif  </label>
                       <div class="control has-icons-left">
                         <input class="input" type="text"  placeholder="Entrer le code d'élément constitutif" name="code EC" value="" onChange={(e: any) => (this.codeEc = e.target.value)} required />
                         <span class="icon is-small is-left">
@@ -129,7 +129,7 @@ export class SpiCreatee {
                     </div>
 
                     <div class="field">
-                      <label class="label">Désignation </label>
+                      <label class="label" id="label">Désignation </label>
                       <div class="control has-icons-left">
                         <input class="input" type="text"  placeholder="Entrer la designation" name="designation" value="" onChange={(e: any) => (this.designation = e.target.value)} required />
                         <span class="icon is-small is-left">
@@ -139,7 +139,7 @@ export class SpiCreatee {
                     </div>
 
                     <div class="field">
-                      <label class="label">Description </label>
+                      <label class="label" id="label">Description </label>
                       <div class="control has-icons-left">
                         <input class="input" type="text"  placeholder="Entrer la description" name="description" value="" onChange={(e: any) => (this.description = e.target.value)} required />
                         <span class="icon is-small is-left">
@@ -149,7 +149,7 @@ export class SpiCreatee {
                     </div>
 
                     <div class="field">
-                      <label class="label">Nombre d'heures des séances de cours </label>
+                      <label class="label" id="label">Nombre d'heures des séances de cours </label>
                       <div class="control has-icons-left">
                         <input class="input " type="text" placeholder="Entrer le nbhCm" name="nbhCm" value="" onChange={(e: any) => (this.nbhCm = e.target.value)} />
                         <span class="icon is-small is-left">
@@ -159,7 +159,7 @@ export class SpiCreatee {
                     </div>
 
                     <div class="field">
-                      <label class="label ">Nombre d'heures des séances de TD </label>
+                      <label class="label " id="label">Nombre d'heures des séances de TD </label>
                       <div class="control has-icons-left">
                         <input class="input" type="text"  placeholder="nbhTd " name="nbhTd" value="" onChange={(e: any) => (this.nbhTd = e.target.value)} />
                         <span class="icon is-small is-left">
@@ -169,7 +169,7 @@ export class SpiCreatee {
                     </div>
 
                     <div class="field">
-                      <label class="label ">Nombre d'heures des séances de Tp </label>
+                      <label class="label " id="label">Nombre d'heures des séances de Tp </label>
                       <div class="control has-icons-left">
                         <input class="input" type="text"  placeholder="nbhTp " name="nbhTp" value="" onChange={(e: any) => (this.nbhTp = e.target.value)} />
                         <span class="icon is-small is-left">
@@ -179,7 +179,7 @@ export class SpiCreatee {
                     </div>
                     <div class="field-body">
                       <div class="field">
-                        <label class="label"> Formation <span class="red"></span> </label>
+                        <label class="label" id="label"> Formation <span class="red"></span> </label>
                         <p class="control has-icons-left has-icons-right">
                           <div class="select is-info">
                             <select class="is-rounded is-info" required onInput={(e: any) => {this.formation.codeFormation = e.target.value; this.changeUE(this.formation.codeFormation)}}>
@@ -192,7 +192,7 @@ export class SpiCreatee {
                         </p>
                       </div>
                       <div class="field">
-                        <label class="label"> Unite Enseignement <span class="red"></span> </label>
+                        <label class="label" id="label"> Unite Enseignement <span class="red"></span> </label>
                         <p class="control has-icons-left has-icons-right">
                           <div class="select is-info">
                             <select class="is-rounded is-info" required onInput={(e: any) => (this.uniteenseignement.codeUe = e.target.value)}>
@@ -205,7 +205,7 @@ export class SpiCreatee {
                         </p>
                       </div>
                       <div class="field">
-                        <label class="label"> Enseignant <span class="red"></span> </label>
+                        <label class="label" id="label"> Enseignant <span class="red"></span> </label>
                         <p class="control has-icons-left has-icons-right">
                           <div class="select is-info">
                             <select class="is-rounded is-info" required onInput={(e: any) => (this.enseignant.noEnseignant = e.target.value)}>

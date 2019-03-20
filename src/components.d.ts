@@ -71,6 +71,9 @@ export namespace Components {
   interface SpiProfile {}
   interface SpiProfileAttributes extends StencilHTMLAttributes {}
 
+  interface SpiQualificatif {}
+  interface SpiQualificatifAttributes extends StencilHTMLAttributes {}
+
   interface SpiRoot {}
   interface SpiRootAttributes extends StencilHTMLAttributes {}
 
@@ -96,6 +99,7 @@ declare global {
     'SpiList': Components.SpiList;
     'SpiLg': Components.SpiLg;
     'SpiProfile': Components.SpiProfile;
+    'SpiQualificatif': Components.SpiQualificatif;
     'SpiRoot': Components.SpiRoot;
     'SpiTest': Components.SpiTest;
     'SpiUe': Components.SpiUe;
@@ -111,6 +115,7 @@ declare global {
     'spi-list': Components.SpiListAttributes;
     'spi-lg': Components.SpiLgAttributes;
     'spi-profile': Components.SpiProfileAttributes;
+    'spi-qualificatif': Components.SpiQualificatifAttributes;
     'spi-root': Components.SpiRootAttributes;
     'spi-test': Components.SpiTestAttributes;
     'spi-ue': Components.SpiUeAttributes;
@@ -171,6 +176,12 @@ declare global {
     new (): HTMLSpiProfileElement;
   };
 
+  interface HTMLSpiQualificatifElement extends Components.SpiQualificatif, HTMLStencilElement {}
+  var HTMLSpiQualificatifElement: {
+    prototype: HTMLSpiQualificatifElement;
+    new (): HTMLSpiQualificatifElement;
+  };
+
   interface HTMLSpiRootElement extends Components.SpiRoot, HTMLStencilElement {}
   var HTMLSpiRootElement: {
     prototype: HTMLSpiRootElement;
@@ -199,6 +210,7 @@ declare global {
     'spi-list': HTMLSpiListElement
     'spi-lg': HTMLSpiLgElement
     'spi-profile': HTMLSpiProfileElement
+    'spi-qualificatif': HTMLSpiQualificatifElement
     'spi-root': HTMLSpiRootElement
     'spi-test': HTMLSpiTestElement
     'spi-ue': HTMLSpiUeElement
@@ -214,6 +226,7 @@ declare global {
     'spi-list': HTMLSpiListElement;
     'spi-lg': HTMLSpiLgElement;
     'spi-profile': HTMLSpiProfileElement;
+    'spi-qualificatif': HTMLSpiQualificatifElement;
     'spi-root': HTMLSpiRootElement;
     'spi-test': HTMLSpiTestElement;
     'spi-ue': HTMLSpiUeElement;
