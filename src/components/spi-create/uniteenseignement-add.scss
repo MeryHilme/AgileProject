@@ -1,0 +1,21 @@
+@import"../../../node_modules/bulma/sass/grid/columns.sass";
+@import"../../../node_modules/bulma/sass/elements/form.sass";
+
+
+
+//https://images.pexels.com/photos/18105/pexels-photo.jpg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940
+body{
+  //background-image:url('https://picsum.photos/1200/900/?image=85');
+  //background-image:url('https://images.pexels.com/photos/872958/pexels-photo-872958.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500');
+ //background-image: url('https://images.pexels.com/photos/34088/pexels-photo.jpg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940');
+ background-image: url('https://singularityhub.com/wp-content/uploads/2018/09/blur-abstract-background-examination-room-undergraduate_shutterstock_639640396.jpg');
+// background-image: url('https://images.pexels.com/photos/93405/pexels-photo-93405.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500');
+background-position: center;
+
+  background-size: cover;
+}
+.column {
+  background-color: inherit;}
+  .box{
+    opacity: inherit
+  }

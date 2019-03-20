@@ -1,0 +1,66 @@
+@import "../../../node_modules/bulma/sass/grid/columns.sass";
+@import "../../../node_modules/bulma/sass/elements/table.sass";
+@import "../../../node_modules/bulma/sass/layout/hero.sass";
+@import "../../../node_modules/bulma/sass/components/modal.sass";
+.center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.columns.is-multiline{
+    flex: auto;
+}
+
+html, body {
+ 
+  box-sizing: border-box;
+  background: url(data:image/jpeg;base64,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);
+  background-size:cover ;
+
+}
+
+
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    padding-top: 100px; /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+  }
+  
+  /* Modal Content */
+  .modal-content {
+    background-color: #fefefe;
+    margin: auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+  }
+  
+  /* The Close Button */
+  .close {
+    color: #aaaaaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+  }
+  
+  .close:hover,
+  .close:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+  }
+
+  #p1{
+      margin-left: auto;
+      margin-right: auto;
+  }
+.column is-3{
+  width: 300px;}

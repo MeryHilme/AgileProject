@@ -1,0 +1,16 @@
+@import "../../../node_modules/bulma/sass/elements/box.sass";
+@import "../../../node_modules/bulma/sass/elements/form.sass";
+@import "../../../node_modules/bulma/sass/elements/button.sass";
+@import "../../../node_modules/bulma/sass/elements/icon.sass";
+
+input[readonly] {
+  cursor: not-allowed;
+}
+
+html, body {
+box-sizing: border-box;
+background: url(http://www.hdbilder.eu/pictures/2013/1003/1/blue-gaussian-blur-pics-679080.jpg);
+// http://dsconcerts.com/wp-content/uploads/desktop-backgrounds-hd-digital-art-simple-backgrounds-wallpapers-hd-desktop-and-mobile.png
+//https://www.pixelstalk.net/wp-content/uploads/2016/04/Images-simple-wallpaper-HD.jpg
+background-size:cover ;
+}
